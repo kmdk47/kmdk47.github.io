@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="ifonts/style.css">
+<link rel="stylesheet" href="css/myStyle.css">
+
+<body class="w3-content" style="max-width:1200px">
+
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <h3 class="w3-wide"><b>MENU</b></h3>
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+  	<a href="#" class="w3-bar-item w3-button"><span class ="icon-home"></span> Principal</a>
+    <a href="#" class="w3-bar-item w3-button"><span class ="icon-youtube"></span> Videos</a>
+    <a href="#" class="w3-bar-item w3-button"><span class ="icon-youtube"></span> Entrevistas</a>
+    <a href="#" class="w3-bar-item w3-button"><span class ="icon-image"></span> Wallpapers</a>
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn"><span class ="icon-folder-music"></span>
+        Discos <i class="fa fa-caret-down"></i>
+    </a>
+    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      
+      <a href="#" class="w3-bar-item w3-button">El Milagro Argentino</a>
+      <a href="#" class="w3-bar-item w3-button">Fiesta Mounstro</a>
+      <a href="#" class="w3-bar-item w3-button">Mi Vida Loca</a>
+      <a href="#" class="w3-bar-item w3-button">Cualquiera puede Cantar</a>
+      <a href="#" class="w3-bar-item w3-button">Trasnoche</a>
+      <a href="#" class="w3-bar-item w3-button">Los Reyes de la Canción</a>
+      <a href="#" class="w3-bar-item w3-button">12 Vivos</a>
+      <a href="#" class="w3-bar-item w3-button">Club Atletico Decadente</a>
+      <a href="#" class="w3-bar-item w3-button">Irrompibles</a>
+      <a href="#" class="w3-bar-item w3-button">Y la Banda Sigue</a>
+    </div>
+    <a href="#" class="w3-bar-item w3-button"><span class = "icon-note"></span> Conciertos</a>
+  </div>
+  <a href="#footer" class="w3-bar-item w3-button w3-padding"><span class ="icon-phone"></span> Contactanos</a> 
+ 
+</nav>
+
+
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide"></div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+<div class="w3-main" style="margin-left:250px">
+
+
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+	<header class="w3-container w3-xlarge">
+    <p class="w3-left">Divina Decadencia</p>
+    <p class="w3-right">
+      <i class="fa fa-search"></i>
+    </p>
+  </header>
+
+  <div class="w3-display-container w3-container">
+    <img src="img/LAD.jpg" alt="Jeans" style="width:100%">
+    <div class="w3-display-topleft w3-text-white" style="padding:30px 50px">
+      <h1 class="w3-jumbo -small">LOS AUTENTICOS DECADENTES </h1>
+      
+      <h1 class="w3-hide-small">FANS CLUB</h1>
+      
+    </div>
+  </div>
+
+  <div class="w3-container w3-text-grey" id="jeans">
+    <p>10 Discos</p>
+  </div>
+
+ 
+  <div class="w3-row w3-grayscale">
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+      <div class="w3-display-container">
+        <img src="img/1.jpg" style="width:100%">
+        <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Gratis<i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>El Milagro Argentino (1989)<br></p>
+      </div>
+    </div>
+     <div class="w3-col l3 s6">
+      <div class="w3-container">
+      <div class="w3-display-container">
+        <img src="img/2.jpg" style="width:100%">
+        <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Gratis<i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Fiesta Mounstro (1993)<br></p>
+      </div>
+    </div>
+     <div class="w3-col l3 s6">
+      <div class="w3-container">
+      <div class="w3-display-container">
+        <img src="img/3.jpg" style="width:100%">
+        <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Gratis<i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Mi Vida Loca (1995)<br></p>
+      </div>
+    </div>
+     <div class="w3-col l3 s6">
+      <div class="w3-container">
+      <div class="w3-display-container">
+        <img src="img/4.jpg" style="width:100%">
+        <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Gratis<i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Cualquiera puede Cantar (1997)<br></p>
+      </div>
+    </div>
+     <div class="w3-col l3 s6">
+      <div class="w3-container">
+      <div class="w3-display-container">
+        <img src="img/5.jpg" style="width:100%">
+        <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Gratis<i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Trasnoche (2000)<br></p>
+      </div>
+    </div>
+     <div class="w3-col l3 s6">
+      <div class="w3-container">
+      <div class="w3-display-container">
+        <img src="img/6.jpg" style="width:100%">
+        <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Gratis<i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Los Reyes de la Canción (2001)<br></p>
+      </div>
+    </div>
+     <div class="w3-col l3 s6">
+      <div class="w3-container">
+      <div class="w3-display-container">
+        <img src="img/7.jpg" style="width:100%">
+        <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Gratis<i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>12 Vivos (2004)<br></p>
+      </div>
+    </div>
+     <div class="w3-col l3 s6">
+      <div class="w3-container">
+      <div class="w3-display-container">
+        <img src="img/8.jpg" style="width:100%">
+        <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Gratis<i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Club Atletico Decadente (2006)<br></p>
+      </div>
+    </div>
+     <div class="w3-col l3 s6">
+      <div class="w3-container">
+      <div class="w3-display-container">
+        <img src="img/9.jpg" style="width:100%">
+        <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Gratis<i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Irrompibles (2010)<br></p>
+      </div>
+    </div>
+     <div class="w3-col l3 s6">
+      <div class="w3-container">
+      <div class="w3-display-container">
+        <img src="img/10.jpg" style="width:100%">
+        <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Gratis<i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Y la Banda Sigue (2014)<br></p>
+      </div>
+    </div>
+  </div>
+  <div class="w3-display-container w3-container">
+    <img src="img/w1.jpg" alt="Jeans" style="width:100%">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+    </div>
+  </div>
+  <div class="w3-display-container w3-container">
+    <img src="img/w2.jpg" alt="Jeans" style="width:100%">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+    </div>
+  </div>
+  <div class="w3-display-container w3-container">
+    <img src="img/w3.jpg" alt="Jeans" style="width:100%">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+    </div>
+  </div>
+  <div class="w3-display-container w3-container">
+    <img src="img/w4.jpg" alt="Jeans" style="width:100%">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+    </div>
+  </div>
+  <div class="w3-display-container w3-container">
+    <img src="img/w5.jpg" alt="Jeans" style="width:100%">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+    </div>
+  </div>
+  <div class="w3-display-container w3-container">
+    <img src="img/LBS.jpg" alt="Jeans" style="width:100%">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+    </div>
+  </div>
+
+
+  <div class="w3-container w3-black w3-padding-32">
+    <h1>Subscribete</h1>
+    <p>Subscribete para recibir noticias tipo VIP:</p>
+    <p><input class="w3-input w3-border" type="text" placeholder="Ingresa un e-mail" style="width:100%"></p>
+    <button type="button" class="w3-button w3-red w3-margin-bottom">Subscribirme</button>
+  </div>
+  
+
+  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+      <div class="w3-col s4">
+        <h4>Contactanos</h4>
+        <p>Preguntas? Adelante.</p>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-border" type="text" placeholder="Nombre" name="Name" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Sobre" name="Subject" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Mensaje" name="Message" required></p>
+          <button type="submit" class="w3-button w3-block w3-black">Enviar</button>
+        </form>
+      </div>
+
+
+      <div class="w3-col s4 w3-justify">
+        <p><i class="fa fa-facebook-official w3-hover-opacity w3-large">www.facebook.com/AutenticosDecadentes</i></p>
+        <p><i class="fa fa-instagram w3-hover-opacity w3-large">www.instagram.com/autenticosdecadentes</i></p>
+        
+        
+      </div>
+    </div>
+  </footer>
+
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+</div>
+
+
+<div id="newsletter" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+    <div class="w3-container w3-white w3-center">
+      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+      <h2 class="w3-wide">NEWSLETTER</h2>
+      <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// Accordion 
+function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
